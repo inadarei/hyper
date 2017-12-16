@@ -3,7 +3,7 @@ layout: typedef
 title: Collection.Doc Documentation
 ---
 
-# Collection.Doc+JSON - Document Format
+# Hyper - Media Format
 
 {% include description.md %}
 
