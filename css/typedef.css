@@ -1,0 +1,131 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  font-weight: 300;
+  line-height: 1.6;
+  /* letter-spacing: .04em; */
+
+  font-size: 16px;
+  color: #302C25;
+}
+
+a {
+  font-weight: normal;
+}
+
+li, dt, dd {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: Georgia; */
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  color:#1E1E1E;
+}
+
+.container h4 {
+    margin-top: 1.5em;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    color: #959592;
+    font-size: 16px;
+}
+
+
+blockquote {
+  display: block;
+  border: 1px black solid;
+  background-color: #e0e0e0;
+  padding: .7em;
+  margin-left: 30px;
+}
+
+dd {
+  display: block;
+  margin-left: 30px;
+}
+
+span.reg-draft {
+    background: orange;
+    color: white;
+    padding: 2px 4px;
+}
+
+span.reg-approved, span.reg-approved a {
+    background: green;
+    color: white;
+    padding: 2px 4px;
+}
+
+span.reg-approved a {
+  text-decoration: underline;
+}
+
+/*
+ Section and list styling:
+ Source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters
+*/
+h2 + h3,
+h2 + *:not(h3) + h2,
+h2 + *:not(h3) + *:not(h3) + h2,
+h2 + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + h2,
+h2 + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + h2,
+h2 + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + h2,
+h2 + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + *:not(h3) + h2 {
+  counter-reset: section_h3;
+}
+
+h3 + h4,
+h3 + *:not(h4) + h4,
+h3 + *:not(h4) + *:not(h4) + h4,
+h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4,
+h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4,
+h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4,
+h3 + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + *:not(h4) + h4 {
+  /* color: red; */ /* for debugging */
+  counter-reset: section_h4;
+}
+
+h4 + h5,
+h4 + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + h4,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5,
+h4 + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + *:not(h5) + h5 {
+  /* color: red; */ /* for debugging */
+  counter-reset: section_h5;
+}
+
+/** Note: unfortunately the "counters" function doesn't seem to work properly for H tags, only lists */
+h3:before  {
+  counter-increment: section_h3;      /* Increment the section counter */
+  content: "§" counter(section_h3) ". "; /* Display the counter */
+}
+
+h4:before  {
+  counter-increment: section_h4;      /* Increment the section counter */
+  content: "§" counter(section_h3) "." counter(section_h4) ". "; /* Display the counter */
+}
+
+h5:before  {
+  counter-increment: section_h5;      /* Increment the section counter */
+  content: "§" counter(section_h3) "." counter(section_h4) "." counter(section_h5) ". "; /* Display the counter */
+}
+
+#toc_parent ol {
+  counter-reset: toc;
+  list-style-type: none;
+}
+#toc_parent li:before {
+  counter-increment: toc;
+  content: counters(toc, ".") ". ";   /* Adds the value of all instances
+                                            of the section counter separated
+                                            by a ".". */
+}

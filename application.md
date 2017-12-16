@@ -26,7 +26,7 @@ Applications which use this media : Various
 
 Fragment identifier considerations :
 
-Hyper+JSON follows RFC6901 for implementing URI Fragment Identification standard
+Hyper follows RFC6901 for implementing URI Fragment Identification standard
 to JSON content types.
 
 Restrictions on usage : None
