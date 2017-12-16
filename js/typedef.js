@@ -1,0 +1,33 @@
+;(function ($) {
+
+/**
+  $('#toc').toc({
+      'selectors': 'h3,h4,h5', //elements to use as headings
+      'container': 'body', //element to find all selectors in
+      'smoothScrolling': true, //enable or disable smooth scrolling on click
+      'prefix': 'toc', //prefix for anchor tags and class names
+      'onHighlight': function(el) {}, //called when a new section is highlighted 
+      'highlightOnScroll': true, //add class to heading that is currently in focus
+      'highlightOffset': 100, //offset to trigger the next headline
+      'anchorName': function(i, heading, prefix) { //custom function for anchor name
+          return prefix+i;
+      },
+      'headerText': function(i, heading, $heading) { //custom function building the header-item text
+          return $heading.text();
+      },
+      'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+        return '';
+      }
+  });
+**/
+
+  $("#toc").tableOfContents(
+    $("body"),      // Scoped to div#wrapper
+    {
+      startLevel: 3,    // H2 and up
+      depth:      3,    // H2 through H4,
+      // topLinks:   true, // Add "Top" Links to Each Header
+    }
+  );
+           
+ })(jQuery);
