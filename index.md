@@ -26,6 +26,7 @@ important influences include:
 2. [Mike Amundsen's Representor implementation](https://github.com/apiacademy/representor)
 2. [Stephen Mitzell's HyperDescribe](https://github.com/smizell/hyperdescribe)
 3. [UBER Hypermedia](http://uberhypermedia.org)
-4. [HAL - Hypertext Application Language](http://stateless.co/hal_specification.html)
+4. [WeSTL Document Model](https://rwcbook.github.io/wstl-spec/)
+5. [HAL - Hypertext Application Language](http://stateless.co/hal_specification.html)
 
 {% include cc-attribution.md %}
