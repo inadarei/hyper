@@ -9,7 +9,11 @@
       }
     ],
     "next": {"href": "/orders?page=2"},
-    "ea:find": {"href": "/orders{?id}", "templated": true}
+    "ea:find": {"href": "/orders{?id}", "templated": true},
+    "ea:admin": [
+      {"href": "/admins/2", "title": "Fred"},
+      {"href": "/admins/5", "title": "Kate"}
+    ]
   },
   "currentlyProcessing": 14,
   "shippedToday": 20,
