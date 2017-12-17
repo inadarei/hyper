@@ -4,9 +4,7 @@
     "links": [
       {"rels": ["self"], "href": "/orders"},
       {"rels": ["next"], "href": "/orders?page=2"},
-      {"rels": ["ea:find"], "href": "/orders{?id}", "templated": true},
-      {"rels": ["ea:admin"], "href": "/admins/2", "title": "Fred"},
-      {"rels": ["ea:admin"], "href": "/admins/5", "title": "Kate"}
+      {"rels": ["ea:find"], "href": "/orders{?id}", "templated": true}
     ]
   },
   "body": {

@@ -13,8 +13,8 @@ to/from the other media types.
 #### h:link
 
   - optional.
-  - Identical to an item in the "links" attribute in the `head` section of the
-    document, but applies, in context, to a $Property object, when used inline.
+  - Identical to the "links" attribute in the `head` section of the document,
+    but applies in context, to an object that it is an attribute of.
 
 #### h:label
 
