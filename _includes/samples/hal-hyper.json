@@ -1,10 +1,10 @@
 {
   "head": {
-    "curies": [{"prefix": "ea", "href": "http://example.com/docs/rels/"}],
+    "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}],
     "links": [
-      {"rels": ["self"], "href": "/orders"},
-      {"rels": ["next"], "href": "/orders?page=2"},
-      {"rels": ["ea:find"], "href": "/orders{?id}", "templated": true}
+      {"rels": ["self"], "uri": "/orders"},
+      {"rels": ["next"], "uri": "/orders?page=2"},
+      {"rels": ["ea:find"], "uri": "/orders{?id}", "templated": true}
     ]
   },
   "body": {
