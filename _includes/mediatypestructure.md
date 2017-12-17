@@ -3,12 +3,12 @@
 Despite its flexible and extensible nature, Hyper is a very simple
 media type with a small vocabulary.
 
-Hyper has two main sections: "meta" and "body". If you view a `Hyper` message as
+Hyper has two main sections: "head" and "body". If you view a `Hyper` message as
 encapsulating controls (links) and state, then `attributes` is where the state
 resides. The meaning of each attribute depends on the
 [profile](http://www.ietf.org/rfc/rfc6906.txt) of the document.
 
-- `meta` - contains properties relevant to the entire document.
+- `head` - contains properties relevant to the entire document.
   1. `version` - optional. Version property indicates the version of the `Hyper`
      specification that a message represents. Currently, there’s only one
      version of the specification: 1.0, the current version. As such, the
@@ -33,12 +33,6 @@ resides. The meaning of each attribute depends on the
       3. label - optional. string. Usually human-readable.
 
 - `body` - required. Object. Contains the main payload of the message. Each
-  property of the body object points to a `$Property` object. The $Property
-  object is a core element of the Hyper mediatype that can be used recursively. We
-  explain it in detail, below in this specification.
-
-  Please note that, unlike the core types in some other hypermedia formats,
-  there is no explicit property called “name” in $Property. Rather, the key of
-  pointing to a $Property object (from body, or another $Property) is used as
-  the “name” value. We find that this approach leads to much more idiomatic
-  and less annoyingly verbose JSON.
+  property of the body object can be any valid JSON value (boolean, string,
+  array or an object), but several fields that start with the reserved `h:`
+  prefix, have pre-defined meanings.

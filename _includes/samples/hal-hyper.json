@@ -1,0 +1,42 @@
+{
+  "head": {
+    "curies": [{"prefix": "ea", "href": "http://example.com/docs/rels/"}],
+    "links": [
+      {"rels": ["self"], "href": "/orders"},
+      {"rels": ["next"], "href": "/orders?page=2"},
+      {"rels": ["ea:find"], "href": "/orders{?id}", "templated": true},
+      {"rels": ["ea:admin"], "href": "/admins/2", "title": "Fred"},
+      {"rels": ["ea:admin"], "href": "/admins/5", "title": "Kate"}
+    ]
+  },
+  "body": {
+    "currentlyProcessing": 14,
+    "shippedToday": 20,
+    "ea:order": [
+      {
+        "h:links": [
+          {"rels": ["self"], "uri": "/orders/123"},
+          {"rels": ["ea:basket"], "uri": "/baskets/98712"},
+          {"rels": ["ea:customer"], "uri": "/customers/7809"}
+        ],
+        "total": 30,
+        "currency": "USD",
+        "status": "shipped"
+      },
+      {
+        "h:links": [
+          {"rels": ["self"], "uri": "/orders/124"},
+          {"rels": ["ea:basket"], "uri": "/baskets/97213"},
+          {"rels": ["ea:customer"], "uri": "/customers/12369"}
+        ],
+        "total": 20,
+        "currency": "USD",
+        "status": "processing"
+      }
+    ],
+    "ea:admin": [
+      {"h:links": [{"uri": "/admins/2", "title": "Fred"}]},
+      {"h:links": [{"uri": "/admins/5", "title": "Kate"}]}
+    ]
+  }
+}

@@ -1,32 +1,12 @@
 {
   "head": {
-    "version": "1.0",
-    "title": "Department Employees",
-    "hreflang": "en",
-    "profiles": ["ex:profiles/department-employees"],
     "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
-    "links": [
-      {"uri": "ex:users", "rels": ["self"]},
-      {"uri": "ex:/", "rels": ["home"]},
-      {
-        "name": "search",
-        "label": "Search",
-        "rels": ["search", "collection"],
-        "uri": "ex:search{?title}",
-        "templated": "true"
-      }
-    ]
+    "links": [{"uri": "ex:employees", "rels": ["self"]}]
   },
   "body": {
-    "department": {
-      "h:value": "North-East",
-      "h:label": "Department",
-      "h:links": [
-        {"uri": "x:departments/north-east", "rels": "x:rels/department-link"}
-      ]
-    },
+    "department": "North-East",
     "employees": {
-      "h:type": "collection",
+      "label": "Department Employees",
       "h:value": {
         "cca78b82-59d5-49d3-bbfe-779de5248dbd": {
           "firstname": "Brianne",
@@ -52,6 +32,6 @@
         }
       }
     },
-    "budget": {"h:value": "500,000", "currency": "USD"}
+    "budget": "500M USD"
   }
 }
