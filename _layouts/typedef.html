@@ -22,6 +22,28 @@
 
   <body>
 
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/spec">Specification</a></li>
+          <li class="dropdown">
+            <a href="/examples" class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true" aria-expanded="false">Examples<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/example-comparisions/hal">HAL</a></li>
+              <li><a href="#">Siren</a></li>
+              <li><a href="#">UBER</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/examples">All Examples</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
         {{ content }}
     </div><!-- /.container -->
