@@ -27,8 +27,16 @@ to/from the other media types.
 #### h:type
 
   - optional
-  - " Used in several media types for pointing to outside semantics, such as
+  - "Used in several media types for pointing to outside semantics, such as
     Schema.org directly or an ALPS descriptor. This can be seen in documents
     that focus on linked data, such as JSON-LD and HTML+RDFa." ([Hypermedia
     Project
     Charter](https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md))
+
+### h:transclude
+
+  - optional. true|false. Only valid in the context of a link object.
+  - Hints to a client whether a link should be transcluded (e.g. image). If a
+    linked resource should be transcluded, a client should determine the
+    appropriate media type by inspecting the media-type returned by the call
+    to the URI.
