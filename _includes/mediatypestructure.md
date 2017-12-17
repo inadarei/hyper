@@ -26,12 +26,18 @@ resides. The meaning of each attribute depends on the
      [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/), complying to the
      W3C definition. In Hyper, CURIEs can be used in "uri" fields or as any key.
      Please not that CURIEs can conflict with many valid uris, such as the ones
-     starting with prefixes like "mailto:", "git:", "data:" etc. (full possible
-     list is at [IANA URI Schemes Registry](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml#uri-schemes-1)).
-      When Hyper sees a colon (":") in a key or a URI, it considers the string to be
-      a URI, unless it is a CURIE registered in the document. Hyper also registers
-      a special CURIE `{"prefix" : "h", "uri" : "http://hyperjson.io/attributes.html"}`
-      that is always present and cannot be removed or overriden.
+     starting with prefixes like "mailto:", "git:", "urn:", "about:" etc. When
+     Hyper sees a colon (":") in a key or a URI, it considers the string to be a
+     URI, unless it is a CURIE registered in the document. Case in point: if you
+     define a CURIE with the prefix "data", you will stop otherwise legit URIs
+     of the form "data:" to be parsed as URIs, in your message. At which point
+     you may want to reconsider the prefix chosen. You can find the full list of
+     possibly conflicting prefixes by looking at the [IANA URI Schemes
+     Registry](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml#uri-schemes-1).
+
+      Hyper also registers a special CURIE `{"prefix" : "h", "uri" :
+      "http://hyperjson.io/attributes.html"}` that is always present and cannot
+      be removed or overriden.
   6. `links` - list of links relevant to the entire document. Each link object
   may have following properties:
 
