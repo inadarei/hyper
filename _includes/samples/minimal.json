@@ -5,33 +5,32 @@
   },
   "body": {
     "department": "North-East",
-    "employees": {
-      "label": "Department Employees",
-      "h:value": {
-        "cca78b82-59d5-49d3-bbfe-779de5248dbd": {
-          "firstname": "Brianne",
-          "lastname": "Watsica",
-          "job-title": "Senior Infrastructure Administrator",
-          "h:links": [
-            {
-              "uri": "ex:employees/cca78b82-59d5-49d3-bbfe-779de5248dbd",
-              "rels": ["ex:employee"]
-            }
-          ]
-        },
-        "5e552416-f143-4bee-9a07-0e6fa8e96c12": {
-          "firstname": "Jose",
-          "lastname": "Jakubowski",
-          "title": "Regional Sales Representative",
-          "h:links": [
-            {
-              "uri": "ex:employees/5e552416-f143-4bee-9a07-0e6fa8e96c12",
-              "rels": ["ex:employee"]
-            }
-          ]
-        }
+    "employees": [
+      {
+        "employee-id": "cca78b82-59d5-49d3-bbfe-779de5248dbd",
+        "firstname": "Brianne",
+        "lastname": "Watsica",
+        "job-title": "Senior Infrastructure Administrator",
+        "h:links": [
+          {
+            "uri": "ex:employees/cca78b82-59d5-49d3-bbfe-779de5248dbd",
+            "rels": ["ex:employee"]
+          }
+        ]
+      },
+      {
+        "employee-id": "5e552416-f143-4bee-9a07-0e6fa8e96c12",
+        "firstname": "Jose",
+        "lastname": "Jakubowski",
+        "title": "Regional Sales Representative",
+        "h:links": [
+          {
+            "uri": "ex:employees/5e552416-f143-4bee-9a07-0e6fa8e96c12",
+            "rels": ["ex:employee"]
+          }
+        ]
       }
-    },
+    ],
     "budget": "500M USD"
   }
 }
