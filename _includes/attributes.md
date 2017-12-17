@@ -33,7 +33,7 @@ to/from the other media types.
     Project
     Charter](https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md))
 
-### h:transclude
+#### h:transclude
 
   - optional. true|false. Only valid in the context of a link object.
   - Hints to a client whether a link should be transcluded (e.g. image). If a
