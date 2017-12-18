@@ -9,7 +9,7 @@ title: Hyper - Foundational Hypermedia Type
 
 ## Mime Type
 
-- application/vnd.hyper
+-  `application/vnd.hyper`
 
 ## Materials
 
