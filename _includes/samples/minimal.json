@@ -1,7 +1,7 @@
 {
   "head": {
     "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
-    "links": [{"uri": "ex:employees", "rel": ["self"]}]
+    "h:link": [{"uri": "ex:employees", "rel": ["self"]}]
   },
   "body": {
     "department": "North-East",

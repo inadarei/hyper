@@ -2,7 +2,7 @@
   "head": {
     "curies": [{"prefix": "ex", "uri": "http://example.org/"}],
     "profiles": ["ex:profiles/people-and-places"],
-    "links": [{"rel": ["self"], "uri": "ex:"}]
+    "h:link": [{"rel": ["self"], "uri": "ex:"}]
   },
   "body": {
     "people": {

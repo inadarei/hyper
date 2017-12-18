@@ -1,7 +1,7 @@
 {
   "head": {
     "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}],
-    "links": [
+    "h:link": [
       {"rel": ["self"], "uri": "/orders"},
       {"rel": ["next"], "uri": "/orders?page=2"},
       {

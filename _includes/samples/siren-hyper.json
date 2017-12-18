@@ -6,7 +6,7 @@
         "uri": "https://github.com/kevinswiber/siren?fake-action="
       }
     ],
-    "links": [
+    "h:link": [
       {"rel": ["self"], "uri": "http://api.x.io/orders/42"},
       {"rel": ["previous"], "uri": "http://api.x.io/orders/41"},
       {"rel": ["next"], "uri": "http://api.x.io/orders/43"},

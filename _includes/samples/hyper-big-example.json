@@ -5,7 +5,7 @@
     "hreflang": "en",
     "profiles": ["ex:profiles/department-employees"],
     "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
-    "links": [
+    "h:link": [
       {"uri": "ex:users", "rel": ["self"]},
       {"uri": "ex:/", "rel": ["home"]},
       {

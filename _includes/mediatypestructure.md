@@ -3,10 +3,12 @@
 Despite its flexible and extensible nature, Hyper is a very simple
 media type with a small vocabulary.
 
-Hyper has two main sections: "head" and "body". If you view a `Hyper` message as
-encapsulating controls (links) and state, then `attributes` is where the state
-resides. The meaning of each attribute depends on the
-[profile](http://www.ietf.org/rfc/rfc6906.txt) of the document.
+Hyper has two main sections: "head" and "body". Fields in the header section
+apply to the entire message. Body part contains data and links/actions. The
+semantic meaning of data attribute depends on the
+[profile](http://www.ietf.org/rfc/rfc6906.txt) links assigned to the message. We
+use the words "message" and "document", interchangeably to refer to a Hyper
+payload exchanged between an API producer and a consumer.
 
 - `head` - contains properties relevant to the entire document.
   1. `version` - optional. Version property indicates the version of the `Hyper`
@@ -39,8 +41,8 @@ resides. The meaning of each attribute depends on the
       **Important:** Hyper registers a special CURIE `{"prefix" : "h", "uri" :
       "http://hyperjson.io/attributes/"}` that is always present and cannot
       be removed or overriden.
-  6. `links` - list of links relevant to the entire document. Identical to the
-     [h:link](#hlinks) in the body, it has the same list of valid attributes.
+  6. `h:link` - list of links relevant to the entire document. Identical to the
+     [h:link](#hlink) in the body, it has the same list of valid attributes.
 
 - `body` - required. Object. Contains the main payload of the message. Each
   property of the body object can be any valid JSON value (boolean, string,

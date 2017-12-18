@@ -18,7 +18,7 @@
         "customerId": "pj123",
         "name": "Peter Joseph"
       },
-      "links": [
+      "h:link": [
         { "rel": [ "self" ], "href": "http://api.x.io/customers/pj123" }
       ]
     }
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "links": [
+  "h:link": [
     { "rel": [ "self" ], "href": "http://api.x.io/orders/42" },
     { "rel": [ "previous" ], "href": "http://api.x.io/orders/41" },
     { "rel": [ "next" ], "href": "http://api.x.io/orders/43" }

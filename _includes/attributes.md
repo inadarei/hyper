@@ -13,7 +13,7 @@ to/from the other media types.
 #### h:link
 
   - optional.
-  - Identical to the "links" attribute in the `head` section of the document,
+  - Identical to the "h:link" attribute in the `head` section of the document,
     but applies in context, to an object that it is an attribute of. It's an
     array of link objects, where each link object can have following attributes:
 
