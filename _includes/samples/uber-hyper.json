@@ -39,7 +39,7 @@
             "h:links": [
               {
                 "h:transclude": "true",
-                "uri": "http://example.org/avatars/1",
+                "uri": "ex:avatars/1",
                 "value": "User Photo"
               }
             ]
