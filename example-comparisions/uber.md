@@ -3,7 +3,7 @@ layout: typedef
 title: Hyper - Examples
 ---
 
-## UBER to Hyper Example
+# UBER to Hyper Example
 
 UBER example from: <http://uberhypermedia.org>
 
@@ -11,7 +11,7 @@ UBER example from: <http://uberhypermedia.org>
 {% include samples/uber.json %}
 ```
 
-### Hyper
+## Hyper
 
 ```json
 {% include samples/uber-hyper.json %}

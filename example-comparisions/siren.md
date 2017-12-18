@@ -3,7 +3,7 @@ layout: typedef
 title: Hyper - Examples
 ---
 
-## Siren to Hyper Example
+# Siren to Hyper Example
 
 Siren example from: <https://github.com/kevinswiber/siren#actions-1>
 
@@ -11,7 +11,7 @@ Siren example from: <https://github.com/kevinswiber/siren#actions-1>
 {% include samples/siren.json %}
 ```
 
-### Hyper
+## Hyper
 
 ```json
 {% include samples/siren-hyper.json %}
