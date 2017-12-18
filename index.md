@@ -15,7 +15,7 @@ title: Hyper - Foundational Hypermedia Type
 
 - [Official Specification](/spec.html)
 - [Examples](/examples)
-- Want to get involved? Here's our [Github Repo](http://hyperjson.io/).
+- Want to get involved? Here's our [Github Repo](http://github.com/inadarei/hyper).
 
 ## Acknowledgements
 
