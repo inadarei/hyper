@@ -39,12 +39,8 @@ resides. The meaning of each attribute depends on the
       **Important:** Hyper registers a special CURIE `{"prefix" : "h", "uri" :
       "http://hyperjson.io/attributes/"}` that is always present and cannot
       be removed or overriden.
-  6. `links` - list of links relevant to the entire document. Each link object
-  may have following properties:
-
-      1. uri - required. string.
-      2. rels - required. arraty of strings or URIs (usually CURRIEed)
-      3. label - optional. string. Usually human-readable.
+  6. `links` - list of links relevant to the entire document. Identical to the
+     [h:links](#hlinks) in the body, it has the same list of valid attributes.
 
 - `body` - required. Object. Contains the main payload of the message. Each
   property of the body object can be any valid JSON value (boolean, string,

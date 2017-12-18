@@ -11,7 +11,7 @@ From: <http://stateless.co/hal_specification.html>
 {% include samples/hal.json %}
 ```
 
-## Hyper
+### Hyper
 
 ```json
 {% include samples/hal-hyper.json %}

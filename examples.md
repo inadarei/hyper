@@ -8,5 +8,5 @@ title: Hyper - Foundational Hypermedia Type
 Some examples of how messages in other formats compare and map to Hyper messages:
 
 1. [HAL+JSON](/example-comparisions/hal)
-2. UBER
+2. [UBER](/example-comparisions/uber)
 3. Siren

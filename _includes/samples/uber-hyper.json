@@ -1,0 +1,109 @@
+{
+  "head": {
+    "curies": [{"prefix": "ex", "uri": "http://example.org/"}],
+    "profiles": ["ex:profiles/people-and-places"],
+    "links": [{"rels": ["self"], "uri": "ex:"}]
+  },
+  "body": {
+    "people": {
+      "h:rels": ["collection", "ex:rels/people"],
+      "h:links": [{"uri": "ex:people"}],
+      "create": {
+        "h:links": [
+          {
+            "rels": ["ex:res/create"],
+            "uri": "ex:people",
+            "model": "g={givenName}&f={familyName}&e={email}",
+            "action": "append"
+          }
+        ]
+      },
+      "search": {
+        "h:links": [
+          {
+            "rels": ["search", "collection"],
+            "url": "ex:people/search{?givenName,familyName,email}",
+            "templated": true
+          }
+        ]
+      },
+      "person": [
+        {
+          "h:links": [
+            {"rels": ["item", "ex:rels/person"], "url": "ex:people/1"}
+          ],
+          "givenName": {"value": "Mike", "h:label": "First Name"},
+          "familyName": {"value": "Amundsen", "h:label": "Last Name"},
+          "email": {"value": "mike@example.org", "h:label": "E-mail"},
+          "avatarUrl": {
+            "h:links": [
+              {
+                "h:transclude": "true",
+                "uri": "http://example.org/avatars/1",
+                "value": "User Photo"
+              }
+            ]
+          }
+        },
+        {
+          "h:links": [
+            {"rels": ["item", "ex:rels/person"], "url": "ex:people/2"}
+          ],
+          "givenName": {"value": "Mildred", "h:label": "First Name"},
+          "familyName": {"value": "Amundsen", "h:label": "Last Name"},
+          "email": {"value": "mildred@example.org", "h:label": "E-mail"},
+          "avatarUrl": {
+            "h:links": [
+              {
+                "h:transclude": "true",
+                "uri": "ex:avatars/2",
+                "value": "User Photo"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "places": {
+      "h:links": {
+        "uri": "ex:places/",
+        "rels": ["collection", "ex:rels/places"]
+      },
+      "search": {
+        "h:links": {
+          "rels": ["search", "collection"],
+          "uri": "ex:places/search{?addressRegion,addressLocality,postalCode}",
+          "templated": true
+        }
+      },
+      "place": [
+        {
+          "h:links": {"rels": ["item", "ex:rels/place"], "uri": "ex:places/a"},
+          "name": "Home",
+          "address": {
+            "streetAddress": {
+              "value": "123 Main Street",
+              "label": "Street Address"
+            },
+            "addressLocality": {"value": "Byteville", "label": "City"},
+            "addressRegion": {"value": "MD", "label": "state"},
+            "postalCode": {"value": "12345", "label": "ZIP"}
+          }
+        },
+        {
+          "h:links": {"rels": ["item", "ex:rels/place"], "uri": "ex:places/b"},
+          "name": "Work",
+          "address": {
+            "streetAddress": {
+              "value": "1456 Grand Ave.",
+              "label": "Street Address"
+            },
+            "addressLocality": {"value": "Byteville", "label": "City"},
+            "addressRegion": {"value": "MD", "label": "state"},
+            "postalCode": {"value": "12345", "label": "ZIP"}
+          }
+        }
+      ]
+    }
+  }
+}
