@@ -6,14 +6,14 @@
     "profiles": ["ex:profiles/department-employees"],
     "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
     "links": [
-      {"uri": "ex:users", "rels": ["self"]},
-      {"uri": "ex:/", "rels": ["home"]},
+      {"uri": "ex:users", "rel": ["self"]},
+      {"uri": "ex:/", "rel": ["home"]},
       {
         "name": "search",
         "label": "Search",
-        "rels": ["search", "collection"],
+        "rel": ["search", "collection"],
         "uri": "ex:search{?title}",
-        "templated": "true"
+        "template": {"fields": {"title": {}}}
       }
     ]
   },
@@ -21,8 +21,8 @@
     "department": {
       "h:value": "North-East",
       "h:label": "Department",
-      "h:links": [
-        {"uri": "x:departments/north-east", "rels": "x:rels/department-link"}
+      "h:link": [
+        {"uri": "x:departments/north-east", "rel": "x:rels/department-link"}
       ]
     },
     "employees": [
@@ -31,10 +31,10 @@
         "firstname": "Brianne",
         "lastname": "Watsica",
         "job-title": "Senior Infrastructure Administrator",
-        "h:links": [
+        "h:link": [
           {
             "uri": "ex:employees/cca78b82-59d5-49d3-bbfe-779de5248dbd",
-            "rels": ["ex:employee"]
+            "rel": ["ex:employee"]
           }
         ]
       },
@@ -43,10 +43,10 @@
         "firstname": "Jose",
         "lastname": "Jakubowski",
         "title": "Regional Sales Representative",
-        "h:links": [
+        "h:link": [
           {
             "uri": "ex:employees/5e552416-f143-4bee-9a07-0e6fa8e96c12",
-            "rels": ["ex:employee"]
+            "rel": ["ex:employee"]
           }
         ]
       }

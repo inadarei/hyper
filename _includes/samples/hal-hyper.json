@@ -2,9 +2,13 @@
   "head": {
     "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}],
     "links": [
-      {"rels": ["self"], "uri": "/orders"},
-      {"rels": ["next"], "uri": "/orders?page=2"},
-      {"rels": ["ea:find"], "uri": "/orders{?id}", "templated": true}
+      {"rel": ["self"], "uri": "/orders"},
+      {"rel": ["next"], "uri": "/orders?page=2"},
+      {
+        "rel": ["ea:find"],
+        "uri": "/orders{?id}",
+        "template": {"fields": {"id": {}}}
+      }
     ]
   },
   "body": {
@@ -12,20 +16,20 @@
     "shippedToday": 20,
     "ea:order": [
       {
-        "h:links": [
-          {"rels": ["self"], "uri": "/orders/123"},
-          {"rels": ["ea:basket"], "uri": "/baskets/98712"},
-          {"rels": ["ea:customer"], "uri": "/customers/7809"}
+        "h:link": [
+          {"rel": ["self"], "uri": "/orders/123"},
+          {"rel": ["ea:basket"], "uri": "/baskets/98712"},
+          {"rel": ["ea:customer"], "uri": "/customers/7809"}
         ],
         "total": 30,
         "currency": "USD",
         "status": "shipped"
       },
       {
-        "h:links": [
-          {"rels": ["self"], "uri": "/orders/124"},
-          {"rels": ["ea:basket"], "uri": "/baskets/97213"},
-          {"rels": ["ea:customer"], "uri": "/customers/12369"}
+        "h:link": [
+          {"rel": ["self"], "uri": "/orders/124"},
+          {"rel": ["ea:basket"], "uri": "/baskets/97213"},
+          {"rel": ["ea:customer"], "uri": "/customers/12369"}
         ],
         "total": 20,
         "currency": "USD",
@@ -33,8 +37,8 @@
       }
     ],
     "ea:admin": [
-      {"h:links": [{"uri": "/admins/2", "title": "Fred"}]},
-      {"h:links": [{"uri": "/admins/5", "title": "Kate"}]}
+      {"h:link": [{"uri": "/admins/2", "title": "Fred"}]},
+      {"h:link": [{"uri": "/admins/5", "title": "Kate"}]}
     ]
   }
 }

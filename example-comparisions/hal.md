@@ -5,7 +5,7 @@ title: Hyper - Examples
 
 ## HAL to Hyper Example
 
-From: <http://stateless.co/hal_specification.html>
+HAL example from: <http://stateless.co/hal_specification.html>
 
 ```json
 {% include samples/hal.json %}

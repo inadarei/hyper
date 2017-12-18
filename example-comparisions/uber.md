@@ -5,7 +5,7 @@ title: Hyper - Examples
 
 ## UBER to Hyper Example
 
-From: <http://uberhypermedia.org>
+UBER example from: <http://uberhypermedia.org>
 
 ```json
 {% include samples/uber.json %}
