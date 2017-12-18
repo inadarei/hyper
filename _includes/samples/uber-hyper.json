@@ -6,8 +6,9 @@
   },
   "body": {
     "people": {
-      "h:rels": ["collection", "ex:rels/people"],
-      "h:links": [{"uri": "ex:people"}],
+      "h:links": [
+        {"uri": "ex:people", "rels": ["collection", "ex:rels/people"]}
+      ],
       "create": {
         "h:links": [
           {
