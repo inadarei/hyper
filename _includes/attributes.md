@@ -35,8 +35,7 @@ to/from the other media types.
           elements should be submitted to the endpoint represented by `uri`. Each
           key is the name of the variable to be sent. If variables are going both
           in URI template and in the body of the request, and disambiguiation is
-          required (there's variable with the same name required in both URI
-          and the body), a "uri:" template can be used. Each field object
+          required choose names sensibly to avoid conflicts. Each field object
           can have following properties:
               1. `label` : optional. Hint for human-friendly label to present to humans,
                  if an input form is rendered.
