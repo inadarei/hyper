@@ -10,7 +10,7 @@ semantic meaning of data attribute depends on the
 use the words "message" and "document", interchangeably to refer to a Hyper
 payload exchanged between an API producer and a consumer.
 
-- `head` - contains properties relevant to the entire document.
+- `head` - optional. Contains properties relevant to the entire document.
   1. `version` - optional. Version property indicates the version of the `Hyper`
      specification that a message represents. Currently, there’s only one
      version of the specification: 1.0, the current version. As such, the
