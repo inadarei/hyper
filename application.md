@@ -4,7 +4,7 @@ Email : irakli@gmail.com
 
 MIME media type name : Application
 
-MIME subtype name : Vendor Tree - vnd.hyper
+MIME subtype name : Vendor Tree - vnd.hyper+json
 
 Required parameters : n/a
 
