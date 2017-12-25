@@ -37,23 +37,30 @@ can have following properties:
     1. `pattern`: optional. Restrictions on allowed values. Syntax must be the
         same as used in [pattern in HTML5](https://www.w3.org/TR/2011/WD-html5-20110525/common-input-element-attributes.html#the-pattern-attribute)
 
-3. `rel` - optional. array of link relation types per
-    [RFC8288](https://tools.ietf.org/html/rfc8288). Only IANA-registered
-    link relation types SHOULD be refered to by simple names, all
-    application-specific and non-common link relation types should be URIs
-    (usually CURRIEed, to save space).
-4. `label` - optional. string. Usually human-readable, for presentation
-    hints.
-5. `action` - optional. string. Indicates the action represented by the uri
-    transition. Hyper borrows definitions of possible action types from
-    [UBER](http://www.uberhypermedia.org) and the list of valid values is as
-    follows:
+###### rel
 
-    1. `append` : An unsafe, non-idempotent request to add a new item. (e.g HTTP POST)
-    2. `partial` : An unsafe, non-idempotent request to modify parts of an existing item. (e.g. HTTP PATCH)
-    3. `read` : A safe, idempotent request. [DEFAULT] (e.g. HTTP GET)
-    4. `remove` : An unsafe, idempotent request to delete an existing item. (e.g. HTTP DELETE)
-    5. `replace` : An unsafe, idempotent request to replace an existing item. (e.g. HTTP PUT)
+optional. array of link relation types per
+[RFC8288](https://tools.ietf.org/html/rfc8288). Only IANA-registered link
+relation types SHOULD be refered to by simple names, all application-specific
+and non-common link relation types should be URIs (usually CURIEed, to save
+space).
+
+###### label
+
+optional. String. Usually human-readable, for presentation hints.
+
+###### action
+
+optional. string. Indicates the action represented by the uri
+transition. Hyper borrows definitions of possible action types from
+[UBER](http://www.uberhypermedia.org) and the list of valid values is as
+follows:
+
+1. `append` : An unsafe, non-idempotent request to add a new item. (e.g HTTP POST)
+2. `partial` : An unsafe, non-idempotent request to modify parts of an existing item. (e.g. HTTP PATCH)
+3. `read` : A safe, idempotent request. [DEFAULT] (e.g. HTTP GET)
+4. `remove` : An unsafe, idempotent request to delete an existing item. (e.g. HTTP DELETE)
+5. `replace` : An unsafe, idempotent request to replace an existing item. (e.g. HTTP PUT)
 
 ##### Example of an Advanced Link:
 
