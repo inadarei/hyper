@@ -27,7 +27,7 @@ extension form a small but powerful vocabulary selected based on the guidelines
 outlined in the [Hypermedia Project
 Charter](https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md).
 
-Hyper is a web standard, leveraging existing specifications, such as: URI
+Hyper is a web standard, based on existing specifications, such as: URI
 Template [[RFC6570](http://tools.ietf.org/html/rfc6570)],
 [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/) and [IANA-registered
 Link Relation
