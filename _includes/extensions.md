@@ -34,3 +34,8 @@ property:
    [relationship
    type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
    which "specifies the relationship of the target object to the link object"
+
+In addition to using [CURIEd] URIs as keywords, the semantic meaning of keys in
+a Hyper document can also be provided by attaching an
+[ALPS](http://alps.io/spec/) profile to it as explained [further in the
+spec](/spec#profiles).
