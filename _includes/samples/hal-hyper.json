@@ -1,15 +1,17 @@
 {
   "h:head": {
-    "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}],
-    "h:ref": {"self": "/orders", "next": "/orders?page=2"},
-    "h:action": [
-      {
-        "rel": ["ea:find"],
-        "uri": "/orders{?id}",
-        "template": {"fields": {"id": {}}}
-      }
-    ]
+    "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}]
   },
+  "h:ref": {"self": "/orders", "next": "/orders?page=2"},
+  "h:link": [
+    {
+      "rel": ["ea:find"],
+      "uri": "/orders{?id}",
+      "template": {"fields": {"id": {}}}
+    },
+    {"rel": ["ea:admin"], "label": "Fred", "uri": "/admins/2"},
+    {"rel": ["ea:admin"], "label": "Kate", "uri": "/admins/5"}
+  ],
   "currentlyProcessing": 14,
   "shippedToday": 20,
   "ea:order": [
@@ -33,9 +35,5 @@
       "currency": "USD",
       "status": "processing"
     }
-  ],
-  "ea:admin": [
-    {"title": "Fred", "h:ref": "/admins/2"},
-    {"title": "Kate", "h:ref": "/admins/5"}
   ]
 }
