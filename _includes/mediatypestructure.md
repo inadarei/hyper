@@ -3,6 +3,8 @@
 Despite its flexible and extensible nature, Hyper is a very simple
 media type with a small vocabulary.
 
+
+
 Hyper has two main sections: "head" and "body". Fields in the header section
 apply to the entire message. Body part contains data and links/actions. The
 semantic meaning of data attribute depends on the

@@ -1,12 +1,11 @@
 ## Description
 
-`Hyper` is a base media type for hypermedia messages. It is designed to capture
-common aspects of a hypermedia message. Applications that leverage the
+`Hyper` is a media type optimized for easy production and consumption of
+hypermedia messages. Applications that leverage the
 [Representor](https://github.com/the-hypermedia-project/charter#representor-pattern)
-pattern - to produce and consume messages in multiple hypermedia types - can
-code against Hyper, instead of a more specific message formats. Implementations of
-the Representor pattern will translate from Hyper to more specific
-hypermedia types and vice-versa.
+pattern - to communicate in multiple hypermedia formats - can code against
+Hyper and let libraries like [Kokua](https://github.com/inadarei/kokua) do
+the translations to and from a veriety of media types.
 
 ![Hyper in Hub and Spoke](/img/hub-and-spoke.png)
 
