@@ -6,27 +6,29 @@ properties of predefined semantic meaning:
 
 ###### uri
 
-required. A [CURIE](https://www.w3.org/TR/2010/NOTE-curie-20101216/), a URI
-[[RFC7320](https://tools.ietf.org/html/rfc7320)] or a URI Template
-[[RFC6570](https://tools.ietf.org/html/rfc6570)].
+required. A URI [[RFC7320](https://tools.ietf.org/html/rfc7320)] or
+URI Template [[RFC6570](https://tools.ietf.org/html/rfc6570)], or a
+[CURIE](https://www.w3.org/TR/2010/NOTE-curie-20101216/) which expands
+into a URI or URI Template.
 
 ###### template
 
-if this field is present, the value of the uri attribute should be treated as a
-URI Template [[RFC6570](https://tools.ietf.org/html/rfc6570)]. URI Template can
-be CURIEd however. When present, the template attribute is an object containing
+optional. If this field is present, the value of the uri field should be
+treated as a URI Template [[RFC6570](https://tools.ietf.org/html/rfc6570)]
+after any [CURIE](https://www.w3.org/TR/2010/NOTE-curie-20101216/)
+expansion. When present, the template attribute is an object containing the
 following properties:
 
 1. `contentType` - a media-type that should be used to encode fields
       into, to satisfy the construction of a request.
       E.g. "application/x-www-form-urlencoded"
-
 2. `fields` - an objects that explains what data
 elements should be submitted to the endpoint represented by `uri`. Each
 key is the name of the variable to be sent. If variables are going both
 in URI template and in the body of the request, and disambiguiation is
 required choose names sensibly to avoid conflicts. Each field object
 can have following properties:
+
     1. `label` : optional. Hint for human-friendly label to present to humans,
         if an input form is rendered.
     1. `required` : optional. Whether a value is required. Boolean true/false.
@@ -39,7 +41,7 @@ can have following properties:
 
 ###### rel
 
-optional. array of link relation types per
+optional. An array of link relation types per
 [RFC8288](https://tools.ietf.org/html/rfc8288). Only IANA-registered link
 relation types SHOULD be refered to by simple names, all application-specific
 and non-common link relation types should be URIs (usually CURIEed, to save
@@ -51,7 +53,7 @@ optional. String. Usually human-readable, for presentation hints.
 
 ###### action
 
-optional. string. Indicates the action represented by the uri
+optional. String. Indicates the action represented by the uri
 transition. Hyper borrows definitions of possible action types from
 [UBER](http://www.uberhypermedia.org) and the list of valid values is as
 follows:
