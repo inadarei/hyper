@@ -18,7 +18,7 @@ functionality via mixins, rather than inheritance-style implementation of a
 parent, abstract Hyper document. It is entirely up to individual API developers
 to decide "how much" hypermedia they want to add to their JSON payloads.
 
-#### Core Vocabulary
+#### Default Mixin - Core Vocabulary
 
 In Hyper, core vocabulary is mixed-in via the default extension. The default
 extension is `{"prefix" : "h", "uri" : "http://hyperjson.io/props/"}` that is
