@@ -7,11 +7,14 @@ needs to be flexible and extensible, to capture the broadest range of hypermedia
 use-cases, it cannot be verbose or bloated in its syntax. This foundational
 principle of simplicity greatly influences the design of Hyper.
 
-Hyper allows gradual introduction of Hypermedia controls in the form of mix-ins.
+> Any valid JSON is also a valid Hyper document. Extensions, in Hyper, add
+> functionality via mixins.
+
+Hyper allows gradual introduction of Hypermedia controls in the form of mixins.
 As opposed to many hypermedia formats, there is no required object shape in
 Hyper. Any valid JSON is also a valid Hyper document. Additional functionality
 is introduced through [extensions](#extensions). Extensions, in Hyper, add
-functionality via mix-ins, rather than inheritance-style implementation of a
+functionality via mixins, rather than inheritance-style implementation of a
 parent, abstract Hyper document. It is entirely up to individual API developers
 to decide "how much" hypermedia they want to add to their JSON payloads.
 
