@@ -19,7 +19,7 @@
   "department": {
     "h:value": "North-East",
     "h:label": "Department",
-    "h:ref": {"x:rels/department-link": "x:departments/north-east"}
+    "h:ref": {"ex:rels/department-link": "ex:departments/north-east"}
   },
   "employees": [
     {
