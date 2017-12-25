@@ -19,7 +19,7 @@ title: Hyper - Foundational Hypermedia Type
 
 {% include corevocabulary.md %}
 
-### An Example, Somewhat Full-Featured Hyper, Document
+### An Example, Somewhat Full-Featured Hyper Document
 
 ```json
 {% include samples/hyper-big-example.json %}
