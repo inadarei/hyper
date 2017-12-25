@@ -99,11 +99,20 @@ represented as h:link would look as follows:
 
   ],
   "h:link" : [
-    {"rel": "self",  "uri" : "http://api.example.com/users?dep=1234&page=4",
-    {"rel": "next", "uri"  : "http://api.example.com/users?dep=1234&page=5",
-    {"rel": "prev",  "uri" : "http://api.example.com/users?dep=1234&page=3",
-    {"rel": "first", "uri" : "http://api.example.com/users?dep=1234&page=1",
-    {"rel": "last",  "uri" : "http://api.example.com/users?dep=1234&page=10"
+    {"rel": "self",  "uri" : "http://api.example.com/users?dep=1234&page=4"},
+    {"rel": "next", "uri"  : "http://api.example.com/users?dep=1234&page=5"},
+    {"rel": "prev",  "uri" : "http://api.example.com/users?dep=1234&page=3"},
+    {"rel": "first", "uri" : "http://api.example.com/users?dep=1234&page=1"},
+    {"rel": "last",  "uri" : "http://api.example.com/users?dep=1234&page=10"}
   ]
 }
 ```
+
+As you can see, using `h:link` for simple references (single rel and a URI
+accessed via HTTP GET) is a bit more involved than just using h:ref, which is
+exactly why `h:ref` exists: to make easy cases easy. A lot of links are simple.
+The "next", "prev", "first", "last" and "self" links, used for pagination being
+most common examples. We decided that for easy cases there should be an easy
+solution. That said, since h:link is a perfect superset of h:ref, you can write
+all your Hyper documents without ever using h:ref, using h:link instead, and
+they will still be perfectly valid.
