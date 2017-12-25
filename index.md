@@ -19,8 +19,8 @@ title: Hyper - Foundational Hypermedia Type
 
 ## Acknowledgements
 
-This specification has been built on the "shoulders" of prior work. Most
-important influences include:
+This specification has been built on the "shoulders of giants" i.e. prior work.
+Most important influences include:
 
 1. [Hypermedia Project's Charter](https://github.com/the-hypermedia-project/charter)
 1. [Mike Amundsen's Representor implementation](https://github.com/apiacademy/representor)
