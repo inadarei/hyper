@@ -49,7 +49,7 @@ conflicting prefixes by looking at the [IANA URI Schemes
 Registry](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml#uri-schemes-1).
 
 **Important:** Hyper registers a special CURIE `{"prefix" : "h", "uri" :
-"http://hyperjson.io/attributes/"}` that is always present and cannot
+"http://hyperjson.io/props/"}` that is always present and cannot
 be removed or overriden.
 
 ##### Example use of h:head in a Hyper document:
