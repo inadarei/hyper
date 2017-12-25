@@ -26,8 +26,8 @@ optional. ISO639-1 code of the language of the document. Defaults to ‘en’.
 
 ###### profiles
 
-optional. A list of URIs. Each element of the list is a link
-pointing to an ALPS profile that can provide additional semantic
+optional. A list of URIs. Each element of the list is a link pointing to an
+[ALPS](http://alps.io/spec/) profile that can provide additional semantic
 information about the fields used in the document. If profiles provide
 conflicting definitions, the last profile included overrides previous
 definitions.
