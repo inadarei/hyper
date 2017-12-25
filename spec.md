@@ -19,13 +19,7 @@ title: Hyper - Foundational Hypermedia Type
 
 {% include corevocabulary.md %}
 
-### Minimal Example Hyper Document
-
-```json
-{% include samples/minimal.json %}
-```
-
-### More Full-Featured Hyper Document
+### An Example, Somewhat Full-Featured Hyper, Document
 
 ```json
 {% include samples/hyper-big-example.json %}
@@ -34,4 +28,4 @@ title: Hyper - Foundational Hypermedia Type
 You can see additional examples of how various Hypermedia types map to Hyper
 in the [examples](/examples) section.
 
-{% include attributes.md %}
+{% include cc-attribution.md %}

@@ -1,56 +1,45 @@
 {
-  "head": {
+  "h:head": {
     "version": "1.0",
     "title": "Department Employees",
     "hreflang": "en",
     "profiles": ["ex:profiles/department-employees"],
-    "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
-    "h:link": [
-      {"uri": "ex:users", "rel": ["self"]},
-      {"uri": "ex:/", "rel": ["home"]},
-      {
-        "name": "search",
-        "label": "Search",
-        "rel": ["search", "collection"],
-        "uri": "ex:search{?title}",
-        "template": {"fields": {"title": {}}}
-      }
-    ]
+    "curies": [{"prefix": "ex", "href": "http://api.example.com/"}]
   },
-  "body": {
-    "department": {
-      "h:value": "North-East",
-      "h:label": "Department",
-      "h:link": [
-        {"uri": "x:departments/north-east", "rel": "x:rels/department-link"}
-      ]
-    },
-    "employees": [
-      {
-        "employee-id": "cca78b82-59d5-49d3-bbfe-779de5248dbd",
-        "firstname": "Brianne",
-        "lastname": "Watsica",
-        "job-title": "Senior Infrastructure Administrator",
-        "h:link": [
-          {
-            "uri": "ex:employees/cca78b82-59d5-49d3-bbfe-779de5248dbd",
-            "rel": ["ex:employee"]
-          }
-        ]
-      },
-      {
-        "employee-id": "5e552416-f143-4bee-9a07-0e6fa8e96c12",
-        "firstname": "Jose",
-        "lastname": "Jakubowski",
-        "title": "Regional Sales Representative",
-        "h:link": [
-          {
-            "uri": "ex:employees/5e552416-f143-4bee-9a07-0e6fa8e96c12",
-            "rel": ["ex:employee"]
-          }
-        ]
+  "h:ref": {"self": "ex:users", "home": "ex:"},
+  "h:link": [
+    {
+      "name": "search",
+      "label": "Search",
+      "rel": ["search", "collection"],
+      "uri": "ex:search{?title}",
+      "template": {"fields": {"title": {}}}
+    }
+  ],
+  "department": {
+    "h:value": "North-East",
+    "h:label": "Department",
+    "h:ref": {"x:rels/department-link": "x:departments/north-east"}
+  },
+  "employees": [
+    {
+      "employee-id": "cca78b82-59d5-49d3-bbfe-779de5248dbd",
+      "firstname": "Brianne",
+      "lastname": "Watsica",
+      "job-title": "Senior Infrastructure Administrator",
+      "h:ref": {
+        "ex:employee": "ex:employees/cca78b82-59d5-49d3-bbfe-779de5248dbd"
       }
-    ],
-    "budget": {"h:value": "500,000", "currency": "USD"}
-  }
+    },
+    {
+      "employee-id": "5e552416-f143-4bee-9a07-0e6fa8e96c12",
+      "firstname": "Jose",
+      "lastname": "Jakubowski",
+      "title": "Regional Sales Representative",
+      "h:ref": {
+        "ex:employee": "ex:employees/5e552416-f143-4bee-9a07-0e6fa8e96c12"
+      }
+    }
+  ],
+  "budget": {"h:value": "500,000", "currency": "USD"}
 }
