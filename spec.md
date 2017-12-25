@@ -15,6 +15,10 @@ title: Hyper - Foundational Hypermedia Type
 
 {% include philosophy.md %}
 
+{% include extensions.md %}
+
+{% include corevocabulary.md %}
+
 ### Minimal Example Hyper Document
 
 ```json
@@ -29,7 +33,5 @@ title: Hyper - Foundational Hypermedia Type
 
 You can see additional examples of how various Hypermedia types map to Hyper
 in the [examples](/examples) section.
-
-{% include mediatypestructure.md %}
 
 {% include attributes.md %}

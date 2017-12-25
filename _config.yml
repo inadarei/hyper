@@ -6,8 +6,17 @@ lsi:         false
 kramdown:
   auto_ids:       true
   entity_output:  as_char
-  toc_levels:     3..5
+  toc_levels:     3..4
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
   show_warnings:  false
+  # syntax_highlighter_opts:
+  #  # Rouge Options › https://github.com/jneen/rouge#full-options
+  #  css_class: 'highlight'
+  #  #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+  #  span:
+  #    line_numbers: false
+  #  block:
+  #    line_numbers: true
+  #    start_line: 1

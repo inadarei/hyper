@@ -17,26 +17,48 @@ li, dt, dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: Georgia; */
-}
-h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   color:#1E1E1E;
+  font-weight: 800;
 }
 
-.container h4 {
-    margin-top: 1.5em;
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 28px;}
+h4 {
+  font-size: 24px;
+  background: #eaeaea;
+  padding: 10px;
 }
-
 h5 {
-    font-size: 16px;
+  font-size: 20px;
+  /** background: #eaeaea;
+  padding: 10px; **/
 }
-
 h6 {
-    color: #959592;
-    font-size: 16px;
+  color: #801480;
+  color: #a31515;
+  font-size: 18px;
+  display: inline-block;
+  background: #eaeaea;
+  padding: 7px;
+}
+.container h4 {
+  margin-top: 1.5em;
 }
 
+
+/*
+H1 36px
+h2 30px
+h3 24px
+h4 18px
+h5 16px
+background: #eae5e5;
+padding: 10px;
+
+body 16
+*/
 
 div#rfc-shoulds {
   display: block;
@@ -105,6 +127,11 @@ span.reg-approved a {
   text-decoration: underline;
 }
 
+
+pre.lineno, td.rouge-code pre {
+  border: 0;
+}
+
 /*
  Section and list styling:
  Source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters
@@ -152,10 +179,12 @@ h4:before  {
   content: "§" counter(section_h3) "." counter(section_h4) ". "; /* Display the counter */
 }
 
+/**
 h5:before  {
-  counter-increment: section_h5;      /* Increment the section counter */
-  content: "§" counter(section_h3) "." counter(section_h4) "." counter(section_h5) ". "; /* Display the counter */
+  counter-increment: section_h5;
+  content: "§" counter(section_h3) "." counter(section_h4) "." counter(section_h5) ". ";
 }
+*/
 
 ol#markdown-toc, ol#markdown-toc ol {
   counter-reset: toc;

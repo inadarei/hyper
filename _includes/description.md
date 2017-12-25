@@ -1,12 +1,13 @@
 ## Description
 
-`Hyper` is a base media type for hypermedia messages. It is designed to capture
-common aspects of a hypermedia message. Applications that leverage the
+`Hyper` is a media type optimized for easy production and consumption of
+hypermedia messages. Developers can write code against Hyper messages, and
+by using implementations of the
 [Representor](https://github.com/the-hypermedia-project/charter#representor-pattern)
-pattern - to produce and consume messages in multiple hypermedia types - can
-code against Hyper, instead of a more specific message formats. Implementations of
-the Representor pattern will translate from Hyper to more specific
-hypermedia types and vice-versa.
+pattern, such as [Kokua](https://github.com/inadarei/kokua) in Node, have their
+messages become consumable in many popular hypermedia formats, such as: HAL,
+Siren, UBER etc. Likewise, on the client side, you will be able to consume APIs
+written in multiple formats, while only coding against Hyper:
 
 ![Hyper in Hub and Spoke](/img/hub-and-spoke.png)
 
@@ -15,3 +16,7 @@ and
 Spoke](http://www.enterpriseintegrationpatterns.com/ramblings/03_hubandspoke.html)
 pattern and thus avoid the combinatorial explosion of complexity in the
 alternative, point-to-point approach.
+
+Due to its versatility, Hyper is also a very fine choice as the primary format of
+an API, but it's entirely up to the API producer and the consumer whether they
+choose to do that or translate Hyper to another format, such as HAL or UBER.
