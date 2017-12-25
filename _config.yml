@@ -1,2 +1,13 @@
-markdown: kramdown
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
 
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     3..5
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+  show_warnings:  false

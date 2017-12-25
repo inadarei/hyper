@@ -157,11 +157,13 @@ h5:before  {
   content: "§" counter(section_h3) "." counter(section_h4) "." counter(section_h5) ". "; /* Display the counter */
 }
 
-#toc_parent ol {
+ol#markdown-toc, ol#markdown-toc ol {
   counter-reset: toc;
   list-style-type: none;
 }
-#toc_parent li:before {
+
+ol#markdown-toc li:before,
+ol#markdown-toc ol li:before {
   counter-increment: toc;
   content: counters(toc, ".") ". ";   /* Adds the value of all instances
                                             of the section counter separated
