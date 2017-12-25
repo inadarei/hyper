@@ -13,7 +13,7 @@ title: Hyper - Foundational Hypermedia Type
 
 {% include toc_and_notations.md %}
 
-{% include philosophy.md %}
+{% include design-choices.md %}
 
 {% include extensions.md %}
 

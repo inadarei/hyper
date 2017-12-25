@@ -1,4 +1,4 @@
-### Desing Choices
+### Design Choices
 
 Primary purpose of Hyper (`application/vnd.hyper+json`) is to be used by developers
 as the hypermedia type that they actually code against. As such, simplicity and
