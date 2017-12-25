@@ -100,7 +100,7 @@ represented as h:link would look as follows:
   "department" : {
     "h:value" : "north-east",
     "h:label" : "North-East",
-    "h:link" : [{"uri" : "http://api.example.com/departments/1234", "rel": "about"}]
+    "h:link" : [{"uri" : "http://api.example.com/departments/1234", "rel": ["about"]}]
   },
   "employees" : [
 
