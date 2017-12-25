@@ -5,44 +5,41 @@
         "prefix": "siren-actions",
         "uri": "https://github.com/kevinswiber/siren?fake-action="
       }
-    ],
-    "h:link": [
-      {"rel": ["self"], "uri": "http://api.x.io/orders/42"},
-      {"rel": ["previous"], "uri": "http://api.x.io/orders/41"},
-      {"rel": ["next"], "uri": "http://api.x.io/orders/43"},
-      {
-        "rel": ["siren-actions:add-item"],
-        "uri": "http://api.x.io/orders/42/items",
-        "action": "append",
-        "contentType": "application/x-www-form-urlencoded",
-        "fields": {
-          "orderNumber": {"type": "hidden", "default": "42"},
-          "productCode": {},
-          "quantity": {"type": "number"}
-        }
-      }
     ]
   },
-  "body": {
-    "orderNumber": 42,
-    "itemCount": 3,
-    "status": "pending",
-    "items": [
-      {
-        "h:type": ["items", "collection"],
-        "h:link": [
-          {
-            "rel": ["http://x.io/rels/order-items"],
-            "uri": "http://api.x.io/orders/42/items"
-          }
-        ]
-      },
-      {
-        "customerId": "pj123",
-        "name": "Peter Joseph",
-        "h:type": ["info", "customer"],
-        "h:link": [{"rel": ["self"], "uri": "http://api.x.io/customers/pj123"}]
+  "h:ref": {
+    "self": "http://api.x.io/orders/42",
+    "previous": "http://api.x.io/orders/41",
+    "next": "http://api.x.io/orders/43"
+  },
+  "h:link": [
+    {
+      "rel": ["siren-actions:add-item"],
+      "uri": "http://api.x.io/orders/42/items",
+      "action": "append",
+      "contentType": "application/x-www-form-urlencoded",
+      "fields": {
+        "orderNumber": {"type": "hidden", "default": "42"},
+        "productCode": {},
+        "quantity": {"type": "number"}
       }
-    ]
-  }
+    }
+  ],
+  "orderNumber": 42,
+  "itemCount": 3,
+  "status": "pending",
+  "items": [
+    {
+      "h:type": ["items", "collection"],
+      "h:ref": {
+        "http://x.io/rels/order-items": "http://api.x.io/orders/42/items"
+      }
+    },
+    {
+      "customerId": "pj123",
+      "name": "Peter Joseph",
+      "h:type": ["info", "customer"],
+      "h:ref": {"self": "http://api.x.io/customers/pj123"}
+    }
+  ]
 }

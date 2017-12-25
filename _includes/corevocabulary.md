@@ -15,6 +15,10 @@ media type with a small vocabulary.
 
 {% include propdefs/link.md %}
 
+#### h:value
+
+{% include propdefs/value.md %}
+
 #### h:label
 
 {% include propdefs/label.md %}
