@@ -9,14 +9,20 @@ a meaning that is defined more generally.
 
 For instance, let's look at this simple Hyper document:
 
-```JSON
+```json
 {
   "firstname": "Laila", "lastname": "Stanton",
   "h:ref": {"profile": "http://example.com/users/2334"}
 }
 ```
 
+Looking at this message alone, given no other documentation, we cannot be certain
+about the semantic meaning of "firstname" and "lastname" properties. They are
+probably defined in an API documentation somewhere or somehow communicated between
+the API producer and the consumer. However, knowing that this is a Hyper document,
+we know following about the 'h:ref' property:
 
-semantic
-meaning specific to the message or a particular application, but communicating
-parties can introduce shared semantic knowledge by
+1. It's a CURIE, with prefix "h".
+2. In Hyper, "h" prefix is predefined and stands for `http://hyperjson.io/attributes/`,
+   therefore the full URI form of the key is: `http://hyperjson.io/attributes/ref`
+3. Looking-up documentation at http://hyperjson.io/attributes/
