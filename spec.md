@@ -17,7 +17,7 @@ title: Hyper - Foundational Hypermedia Type
 
 {% include extensions.md %}
 
-{% include mediatypestructure.md %}
+{% include corevocabulary.md %}
 
 ### Minimal Example Hyper Document
 

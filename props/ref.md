@@ -1,5 +1,8 @@
 ---
+layout: typedef
+title: h:ref property
 ---
-### h:ref
 
-This is an HTML description of REF
+## h:ref
+
+{% include propdefs/ref.md %}
