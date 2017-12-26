@@ -1,11 +1,8 @@
 {
   "head": {
-    "curies": [
-      {
-        "prefix": "siren-actions",
-        "uri": "https://github.com/kevinswiber/siren?fake-action="
+    "curies": {
+        "siren-actions": "https://github.com/kevinswiber/siren?fake-action="
       }
-    ]
   },
   "h:ref": {
     "self": "http://api.x.io/orders/42",

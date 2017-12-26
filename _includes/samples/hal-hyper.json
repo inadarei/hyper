@@ -1,6 +1,6 @@
 {
   "h:head": {
-    "curies": [{"prefix": "ea", "uri": "http://example.com/docs/rels/"}]
+    "curies": {"ea": "http://example.com/docs/rels/"}
   },
   "h:ref": {"self": "/orders", "next": "/orders?page=2"},
   "h:link": [
