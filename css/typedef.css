@@ -13,6 +13,14 @@ a {
   font-weight: normal;
 }
 
+p {
+  margin: 0 0 1.3em;
+}
+
+li {
+  margin-bottom: 0.7em;
+}
+
 li, dt, dd {
 }
 
