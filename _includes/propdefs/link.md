@@ -1,8 +1,10 @@
 h:link is a super-set of [h:ref](/spec#href) allowing representation of
 complex hyperlinks and parametrized actions (similar to HTML's Form element).
 
-h:link points to an array of objects, where each object can have following
-properties of predefined semantic meaning:
+h:link points to an array of objects, where the order of such links should
+not be considered significant.
+
+Each object can have following properties of predefined semantic meaning:
 
 ###### uri
 
@@ -39,11 +41,12 @@ can have following properties:
 
 ###### rel
 
-optional. array of link relation types per
+optional. An array of link relation types per
 [RFC8288](https://tools.ietf.org/html/rfc8288). Only IANA-registered link
 relation types SHOULD be refered to by simple names, all application-specific
 and non-common link relation types should be URIs (usually CURIEed, to save
-space).
+space).  The order of the link relations in this array should not be considerd
+significant.
 
 ###### label
 
