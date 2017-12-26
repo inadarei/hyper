@@ -2,8 +2,6 @@
   "h:head": {
     "version": "1.0",
     "title": "Department Employees",
-    "hreflang": "en",
-    "profiles": ["ex:profiles/department-employees"],
     "curies": {"ex": "http://api.example.com/"}
   },
   "h:ref": {"self": "ex:users", "home": "ex:"},
