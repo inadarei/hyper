@@ -89,7 +89,7 @@ Body elements.
 ##### An h:ref as h:link Example
 
 As noted earlier, h:link is a superset of h:ref, any h:ref can actually be
-represented as an h:link. Case in point: the [earier example](/spec#example-document-with-hrefs) of h:ref, when
+represented as an h:link. Case in point: the [earlier example](/spec#example-document-with-hrefs) of h:ref, when
 represented as h:link would look as follows:
 
 ```json
@@ -100,17 +100,17 @@ represented as h:link would look as follows:
   "department" : {
     "h:value" : "north-east",
     "h:label" : "North-East",
-    "h:link" : [{"uri" : "http://api.example.com/departments/1234", "rel": "about"}]
+    "h:link" : [{"uri" : "http://api.example.com/departments/1234", "rel": ["about"]}]
   },
   "employees" : [
 
   ],
   "h:link" : [
-    {"rel": "self",  "uri" : "http://api.example.com/users?dep=1234&page=4"},
-    {"rel": "next", "uri"  : "http://api.example.com/users?dep=1234&page=5"},
-    {"rel": "prev",  "uri" : "http://api.example.com/users?dep=1234&page=3"},
-    {"rel": "first", "uri" : "http://api.example.com/users?dep=1234&page=1"},
-    {"rel": "last",  "uri" : "http://api.example.com/users?dep=1234&page=10"}
+    {"rel": ["self"],  "uri" : "http://api.example.com/users?dep=1234&page=4"},
+    {"rel": ["next"], "uri"  : "http://api.example.com/users?dep=1234&page=5"},
+    {"rel": ["prev"],  "uri" : "http://api.example.com/users?dep=1234&page=3"},
+    {"rel": ["first"], "uri" : "http://api.example.com/users?dep=1234&page=1"},
+    {"rel": ["last"],  "uri" : "http://api.example.com/users?dep=1234&page=10"}
   ]
 }
 ```
