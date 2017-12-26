@@ -1,6 +1,6 @@
 {
   "head": {
-    "curies": [{"prefix": "ex", "uri": "http://example.org/"}],
+    "curies": {"ex": "http://example.org/"},
     "profiles": ["ex:profiles/people-and-places"]
   },
   "h:ref": {"self": "ex:"},

@@ -34,22 +34,22 @@ definitions.
 
 ###### curies
 
-optional. List of
-[CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/), complying to the
-W3C definition. In Hyper, CURIEs can be used in values of "uri" fields or
-as any object's key's name. Please note that CURIEs can conflict with many
-valid uris, such as the ones starting with prefixes like "mailto:", "git:",
-"urn:", "about:" etc. When Hyper sees a colon (":") in a key name or in a
-value of uri field, it considers the string to be a URI, unless it is a
-CURIE registered in the document. Case in point: if you define a CURIE with
-the prefix "data", you will stop otherwise legit URIs of the form "data:"
-to be parsed as URIs, in your Hyper message. At which point you may want to
-reconsider the prefix chosen. You can find the full list of possibly
-conflicting prefixes by looking at the [IANA URI Schemes
+optional. A JSON object where keys are prefixes and values are URIs of
+corresponding [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/),
+complying to the W3C definition. In Hyper, CURIEs can be used in values
+of "uri" fields or as any object's key's name. Please note that CURIEs
+can conflict with many valid uris, such as the ones starting with prefixes
+like "mailto:", "git:", "urn:", "about:" etc. When Hyper sees a colon (":")
+in a key name or in a value of uri field, it considers the string to be a
+URI, unless it is a CURIE registered in the document. Case in point: if you
+define a CURIE with the prefix "data", you will stop otherwise legit URIs
+of the form "data:" to be parsed as URIs, in your Hyper message. At such a
+point you may want to reconsider the prefix chosen. You can find the full
+list of possibly conflicting prefixes by looking at the [IANA URI Schemes
 Registry](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml#uri-schemes-1).
 
-**Important:** Hyper registers a special CURIE `{"prefix" : "h", "uri" :
-"http://hyperjson.io/props/"}` that is always present and cannot
+**Important:** Hyper registers a special CURIE `"h":
+"http://hyperjson.io/props/"` that is always present and cannot
 be removed or overriden.
 
 ##### Example use of h:head in a Hyper document:
@@ -61,7 +61,7 @@ be removed or overriden.
     "title": "Department Employees",
     "hreflang": "en",
     "profiles": ["ex:profiles/department-employees"],
-    "curies": [{"prefix": "ex", "href": "http://api.example.com/"}],
+    "curies": {"ex": "http://api.example.com/"},
   },
   "department" : {
     "name" : "North-East Region",
