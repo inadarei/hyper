@@ -3,6 +3,10 @@
 Despite its flexible and extensible nature, Hyper is a very simple
 media type with a small vocabulary.
 
+In Hyper, JSON arrays are used as sets, not ordered lists.  The
+order of a specified array should not be considered part of the
+conveyed information.
+
 #### h:head
 
 {% include propdefs/head.md %}
