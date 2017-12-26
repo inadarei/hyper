@@ -1,9 +1,8 @@
 {
   "head": {
-    "curies": [{"prefix": "ex", "uri": "http://example.org/"}],
-    "profiles": ["ex:profiles/people-and-places"]
+    "curies": [{"prefix": "ex", "uri": "http://example.org/"}]
   },
-  "h:ref": {"self": "ex:"},
+  "h:ref": {"self": "ex:", "profile" : "ex:profiles/people-and-places"},
   "people": {
     "h:link": [
       {"uri": "ex:people", "rel": ["collection", "ex:rels/people"]}

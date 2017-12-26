@@ -28,4 +28,8 @@ title: Hyper - Foundational Hypermedia Type
 You can see additional examples of how various Hypermedia types map to Hyper
 in the [examples](/examples) section.
 
+### Important HTTP Headers
+
+{% include http-headers.md %}
+
 {% include cc-attribution.md %}

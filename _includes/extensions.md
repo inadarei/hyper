@@ -12,7 +12,7 @@ For instance, let's look at this simple Hyper document:
 ```json
 {
   "firstname": "Laila", "lastname": "Stanton",
-  "h:ref": {"profile": "http://example.com/users/2334"}
+  "h:ref": {"about": "http://example.com/users/2334"}
 }
 ```
 
@@ -35,7 +35,11 @@ property:
    type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
    which "specifies the relationship of the target object to the link object"
 
-In addition to using, optinally: CURIed, URIs as keywords, the semantic meaning
-of keys in a Hyper document can also be provided by attaching an
-[ALPS](http://alps.io/spec/) profile to it as explained [further in the
-spec](/spec#profiles).
+In addition to using, an optinally CURIed, URIs as keywords, the semantic
+meaning of keys in a Hyper document can also be provided by attaching an
+[ALPS](http://alps.io/spec/) profile, in HTTP header, as explained [further in
+the spec](/spec#profile).
+
+In Hyper documents, appplication- and context-specific semantics SHOULD be
+provided by profile links, whilst CURIEd keys shoud be used for generic
+and reusable extensions.
