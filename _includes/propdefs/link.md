@@ -56,10 +56,11 @@ optional. String. Usually human-readable, for presentation hints.
 
 ###### action
 
-optional. String. Indicates the action represented by the uri
-transition. Hyper borrows definitions of possible action types from
-[UBER](http://www.uberhypermedia.org) and the list of valid values is as
-follows:
+Required (per compliance with
+[RFC8288[](https://tools.ietf.org/html/rfc8288#section-3.3)). String. Indicates
+the action represented by the uri transition. Hyper borrows definitions of
+possible action types from [UBER](http://www.uberhypermedia.org) and the list of
+valid values is as follows:
 
 1. `append` : An unsafe, non-idempotent request to add a new item. (e.g HTTP POST)
 2. `partial` : An unsafe, non-idempotent request to modify parts of an existing item. (e.g. HTTP PATCH)
