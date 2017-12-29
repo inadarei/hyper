@@ -27,6 +27,10 @@ media type with a small vocabulary.
 
 {% include propdefs/type.md %}
 
+#### h:pvt
+
+{% include propdefs/pvt.md %}
+
 #### Name
 
 There is actually no explicit property called "name" in Hyper, as you would see
