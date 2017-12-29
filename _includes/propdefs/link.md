@@ -54,6 +54,25 @@ significant.
 
 optional. String. Usually human-readable, for presentation hints.
 
+###### embed
+
+optional. Suggests to the consumer whether the resource from the URI SHOULD be
+embedded within the currently loaded document or treated as a transition to a
+new state/document (embed="false"). Defaults to false. Unrecognized values
+should also be treated as `false`.
+
+Expected values include the folowing list:
+
+- `false`: do not embed.
+- `true`: embed using the best-effort approach.  SHOULD use the content-type
+  headers returned by the resource to determine media type of the resource
+  being embedded.
+- `image/*`: embed as image
+- `audio/*`: embed as audio
+- `video/*`: embed as video
+- `text/*`: embed as text
+- Any valid media type that the consumer can recognize.
+
 ###### action
 
 Optional. String. Indicates the action represented by the uri transition. Hyper
