@@ -46,8 +46,8 @@ hypermedia format, we use URIs extensively in Hyper so keeping things clean and
 manageable is very useful.
 
 Case in point: let's assume that we need to refer to a lot
-of URIs that all start with "http://hyperjson.io/props". We can CURIE this URL
-by defining a prefix such as: `{"h" : "http://hyperjson.io/props"}` and then
+of URIs that all start with "<http://hyperjson.io/props/>". We can CURIE this URL
+by defining a prefix such as: `{"h" : "http://hyperjson.io/props/"}` and then
 long URIs like <http://hyperjson.io/props/ref> and
 <http://hyperjson.io/props/link> become much simpler `h:ref` and `h:link`.
 You can read more about CURIE standard at:
