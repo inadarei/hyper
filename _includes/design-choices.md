@@ -14,13 +14,13 @@ short as the following three principles:
    long as it doesn't violate the other two rules (which most JSON documents,
    do not).
 1. Keys of JSON objects in a Hyper document (referred to as 'attributes' in the
-   rest of this spec, for brevity) MAY be URIs. Such keys indicate extra
-   semantics and processing rules that MAY be provided by a resource at the
-   other end of the URI. URIs do not have to be dereferenceable, however. They
-   are just a namespace, and the meaning of a namespace CAN be provided by any
-   convenient means (e.g. publishing an RFC, Swagger document or a nicely
-   printed book). These URIs can also be Compact URIs -
-   [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/). Namespacing
+   rest of this spec, for brevity) MAY be URIs. In Hyper, attributes that are
+   valid URIs indicate extra semantics and processing rules that MAY be provided
+   by a resource at the other end of the URI. URIs do not have to be
+   dereferenceable, however. They are just a namespace, and the meaning of a
+   namespace CAN be provided by any convenient means (e.g. publishing an RFC,
+   Swagger document or a nicely printed book). These URIs can also be Compact
+   URIs - [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/). Namespacing
    attributes by providing them as URIs is a primary way of introducing
    additional semantic and processing rules - foundation of extensibility in
    Hyper.
