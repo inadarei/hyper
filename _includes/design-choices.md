@@ -28,8 +28,8 @@ short as the following three principles:
    at a set of URIs, the root of which is <http://hyperjson.io/props/>.
 
 Hyper allows gradual introduction of Hypermedia controls in the form of mixins.
-As opposed to many hypermedia formats, there is no required object shape in
-Hyper. Most valid JSON documents are also a valid Hyper documents. Additional
+As opposed to many other hypermedia formats, there is no required object shape
+in Hyper. Most valid JSON documents are also a valid Hyper documents. Additional
 functionality is introduced through [extensions](#extensions). Extensions, in
 Hyper, add functionality via mixins, rather than inheritance-style
 implementation of a parent, abstract Hyper document. It is entirely up to
