@@ -5,8 +5,6 @@ title: Hyper - Foundational Hypermedia Type
 
 # Hyper - Foundational Hypermedia Type
 
-{% include motivation.md %}
-
 {% include description.md %}
 
 {% include authors_updates.html %}

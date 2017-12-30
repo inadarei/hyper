@@ -17,6 +17,7 @@ Spoke](http://www.enterpriseintegrationpatterns.com/ramblings/03_hubandspoke.htm
 pattern and thus avoid the combinatorial explosion of complexity in the
 alternative, point-to-point approach.
 
-Due to its versatility, Hyper is also a very fine choice as the primary format of
-an API, but it's entirely up to the API producer and the consumer whether they
-choose to do that or translate Hyper to another format, such as HAL or UBER.
+Due to its simplicity and versatility, Hyper is also a very fine choice as the
+primary format of an API, but it's entirely up to the API producer and the
+consumer whether they choose to do that or translate Hyper to another format,
+such as HAL or UBER.

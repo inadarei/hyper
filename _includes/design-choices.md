@@ -7,16 +7,35 @@ needs to be flexible and extensible, to capture the broadest range of hypermedia
 use-cases, it cannot be verbose or bloated in its syntax. This foundational
 principle of simplicity greatly influences the design of Hyper.
 
-> Any valid JSON is also a valid Hyper document. Extensions, in Hyper, add
-> functionality via mixins.
+Simplicity comes from an intentionally small set of additional constraints that
+Hyper introduces on top of "plain old JSON". The Hyper spec, could be as short as
+following three principles:
+
+1. Hyper is a JSON document of arbitrary shape. Any JSON is a valid Hyper as
+   long as it doesn't violate the other two rules (which most JSON documents,
+   do not).
+1. Keys of a Hyper document MAY be URIs. Such attributes indicate extra
+   semantics and processing rules that MAY be provided by a resource at the
+   other end of the URI. URIs do not have to be dereferenceable, however. They
+   are just a namespace, and the meaning of a namespace CAN be provided by any
+   convenient means (e.g. publishing an RFC, Swagger document or a nicely
+   printed book). These URIs can also be Compact URIs -
+   [CURIEs](https://www.w3.org/TR/2010/NOTE-curie-20101216/). Namespacing
+   attributes by providing them as URIs is a primary way of introducing
+   additional semantic and processing rules - foundation of extensibility in
+   Hyper.
+1. Applications producing and consuming Hyper messages acknowledge the implicit
+   existence of a core set of extensions ('core vocabulary'), that is documented
+   at a set of URIs, the root of which is http://hyperjson.io/props/.
 
 Hyper allows gradual introduction of Hypermedia controls in the form of mixins.
 As opposed to many hypermedia formats, there is no required object shape in
-Hyper. Any valid JSON is also a valid Hyper document. Additional functionality
-is introduced through [extensions](#extensions). Extensions, in Hyper, add
-functionality via mixins, rather than inheritance-style implementation of a
-parent, abstract Hyper document. It is entirely up to individual API developers
-to decide "how much" hypermedia they want to add to their JSON payloads.
+Hyper. Most valid JSON documents are also a valid Hyper documents. Additional
+functionality is introduced through [extensions](#extensions). Extensions, in
+Hyper, add functionality via mixins, rather than inheritance-style
+implementation of a parent, abstract Hyper document. It is entirely up to
+individual API developers to decide "how much" hypermedia they want to add to
+their JSON payloads.
 
 #### Default Mixin - Core Vocabulary
 
