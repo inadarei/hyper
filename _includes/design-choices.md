@@ -25,7 +25,7 @@ short as the following three principles:
    Hyper.
 1. Applications producing and consuming Hyper messages acknowledge the implicit
    existence of a core set of extensions ('core vocabulary'), that is documented
-   at a set of URIs, the root of which is http://hyperjson.io/props/.
+   at a set of URIs, the root of which is <http://hyperjson.io/props/>.
 
 Hyper allows gradual introduction of Hypermedia controls in the form of mixins.
 As opposed to many hypermedia formats, there is no required object shape in
