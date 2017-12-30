@@ -1,15 +1,14 @@
 ### Design Choices
 
-Primary purpose of Hyper (`application/vnd.hyper+json`) is to be used by developers
-as the hypermedia type that they actually code against. As such, simplicity and
-developer experience are very important in the design of Hyper. As much as Hyper
-needs to be flexible and extensible, to capture the broadest range of hypermedia
-use-cases, it cannot be verbose or bloated in its syntax. This foundational
-principle of simplicity greatly influences the design of Hyper.
+Primary purpose of Hyper (`application/vnd.hyper+json`) is to be used by
+developers as the hypermedia type that they actually code against. As such,
+simplicity and developer experience are very important in its design. Hyper
+stays as close as possible to plain JSON and avoids being verbose or bloated
+in its syntax.
 
 Simplicity comes from an intentionally small set of additional constraints that
-Hyper introduces on top of "plain old JSON". The Hyper spec, could be as short as
-following three principles:
+Hyper introduces on top of "plain old JSON". The Hyper spec is essentially as
+short as the following three principles:
 
 1. Hyper is a JSON document of arbitrary shape. Any JSON is a valid Hyper as
    long as it doesn't violate the other two rules (which most JSON documents,
