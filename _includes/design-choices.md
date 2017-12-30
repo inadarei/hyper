@@ -29,7 +29,7 @@ short as the following three principles:
 
 Hyper allows gradual introduction of Hypermedia controls in the form of mixins.
 As opposed to many other hypermedia formats, there is no required object shape
-in Hyper. Most valid JSON documents are also a valid Hyper documents. Additional
+in Hyper. Most valid JSON documents are also valid Hyper documents. Additional
 functionality is introduced through [extensions](#extensions). Extensions, in
 Hyper, add functionality via mixins, rather than inheritance-style
 implementation of a parent, abstract Hyper document. It is entirely up to
