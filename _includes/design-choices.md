@@ -13,7 +13,8 @@ short as the following three principles:
 1. Hyper is a JSON document of arbitrary shape. Any JSON is a valid Hyper as
    long as it doesn't violate the other two rules (which most JSON documents,
    do not).
-1. Keys of a Hyper document MAY be URIs. Such attributes indicate extra
+1. Keys of JSON objects in a Hyper document (referred to as 'attributes' in the
+   rest of this spec, for brevity) MAY be URIs. Such keys indicate extra
    semantics and processing rules that MAY be provided by a resource at the
    other end of the URI. URIs do not have to be dereferenceable, however. They
    are just a namespace, and the meaning of a namespace CAN be provided by any
