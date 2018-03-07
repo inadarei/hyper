@@ -9,7 +9,7 @@ title: Hyper - Foundational Hypermedia Type
 
 ## Mime Type
 
--  `application/vnd.hyper+json`
+-  `application/vnd.hyper+json` ([IANA Registration](https://www.iana.org/assignments/media-types/application/vnd.hyper+json))
 
 ## Materials
 
