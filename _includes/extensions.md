@@ -35,7 +35,7 @@ property:
    type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-rel)
    which "specifies the relationship of the target object to the link object"
 
-In addition to using, an optinally CURIed, URIs as attributes, the semantic
+In addition to using, an optionally CURIed, URIs as attributes, the semantic
 meaning of key names in JSON objects of a Hyper document can also be provided by
 attaching an [ALPS](http://alps.io/spec/) profile, in HTTP header, as explained
 [further in the spec](/spec#profile).
